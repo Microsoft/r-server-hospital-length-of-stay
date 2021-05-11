@@ -20,5 +20,5 @@
 4. On any other computer, use the VM's ip address for the URL: http://ipaddress:3000.
 5. Come back to this window to view the id/prediction after hitting Admit Patient. 
 6. Leave this window open; when you close this window you will shut down the site.
-7.  o stop the site and leave the window open, put focus on the window and type Ctrl-C.  
+7. To stop the site and leave the window open, put focus on the window and type Ctrl-C.  
 

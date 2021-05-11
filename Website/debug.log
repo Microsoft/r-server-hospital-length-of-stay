@@ -1,0 +1,197 @@
+Tue Feb 09 2021 12:01:42 GMT-0500 (Eastern Standard Time): The website is running at http://localhost:3000
+Tue Feb 09 2021 12:01:42 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 2
+Tue Feb 09 2021 12:01:42 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 1
+Tue Feb 09 2021 12:01:42 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 2
+Tue Feb 09 2021 12:01:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 1
+Tue Feb 09 2021 12:01:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 2
+Tue Feb 09 2021 12:02:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: acquired connection 1
+Tue Feb 09 2021 12:02:54 GMT-0500 (Eastern Standard Time): Patient ID: 1234
+Tue Feb 09 2021 12:02:54 GMT-0500 (Eastern Standard Time): RequestError: Could not find stored procedure 'do_native_predict'.
+Tue Feb 09 2021 12:02:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection reset: 1
+Tue Feb 09 2021 12:06:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: closing idle connection: 2
+Tue Feb 09 2021 12:06:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection ended: 2
+Tue Feb 09 2021 12:06:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 1
+Tue Feb 09 2021 12:06:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 3
+Tue Feb 09 2021 12:06:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 3
+Tue Feb 09 2021 12:07:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: closing idle connection: 1
+Tue Feb 09 2021 12:07:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection ended: 1
+Tue Feb 09 2021 12:07:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 1
+Tue Feb 09 2021 12:07:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 4
+Tue Feb 09 2021 12:07:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 4
+Tue Feb 09 2021 12:08:43 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: acquired connection 3
+Tue Feb 09 2021 12:09:18 GMT-0500 (Eastern Standard Time): Patient ID: 9999
+Tue Feb 09 2021 12:09:18 GMT-0500 (Eastern Standard Time): RequestError: Invalid object name 'QueryPatient'.
+Tue Feb 09 2021 12:09:18 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection reset: 3
+Tue Feb 09 2021 12:12:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: closing idle connection: 4
+Tue Feb 09 2021 12:12:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection ended: 4
+Tue Feb 09 2021 12:12:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 1
+Tue Feb 09 2021 12:12:54 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 5
+Tue Feb 09 2021 12:12:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 5
+Tue Feb 09 2021 12:13:24 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: acquired connection 3
+Tue Feb 09 2021 12:13:24 GMT-0500 (Eastern Standard Time): Patient ID: 1235
+Tue Feb 09 2021 12:13:24 GMT-0500 (Eastern Standard Time): Prediction: 2.9478174206819525
+Tue Feb 09 2021 12:13:24 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection reset: 3
+Tue Feb 09 2021 12:17:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: closing idle connection: 5
+Tue Feb 09 2021 12:17:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection ended: 5
+Tue Feb 09 2021 12:17:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 1
+Tue Feb 09 2021 12:17:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 6
+Tue Feb 09 2021 12:17:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 6
+Tue Feb 09 2021 12:18:24 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: closing idle connection: 3
+Tue Feb 09 2021 12:18:24 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection ended: 3
+Tue Feb 09 2021 12:18:24 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 1
+Tue Feb 09 2021 12:18:24 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 7
+Tue Feb 09 2021 12:18:25 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 7
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): The website is running at http://localhost:3000
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 2
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 1
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 2
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 2
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 1
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:13:45 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 3
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 4
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 3
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 4
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:13:50 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 5
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 5
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 6
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 6
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:13:55 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 7
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 7
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 8
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 8
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:14:00 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:14:05 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 9
+Thu Feb 11 2021 12:14:05 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 9
+Thu Feb 11 2021 12:14:05 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:14:05 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:14:05 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:14:06 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 10
+Thu Feb 11 2021 12:14:06 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 10
+Thu Feb 11 2021 12:14:06 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:14:06 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:14:06 GMT-0500 (Eastern Standard Time): ConnectionError: Failed to connect to localhost:1433 - Could not connect (sequence)
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): The website is running at http://localhost:3000
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 2
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 1
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 2
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 1
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 2
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:36 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:41 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 3
+Thu Feb 11 2021 12:15:41 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 4
+Thu Feb 11 2021 12:15:41 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 3
+Thu Feb 11 2021 12:15:41 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:41 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:41 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:42 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 4
+Thu Feb 11 2021 12:15:42 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:42 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:42 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:46 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 5
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 5
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 6
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 6
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:47 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:52 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 7
+Thu Feb 11 2021 12:15:52 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 7
+Thu Feb 11 2021 12:15:52 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:52 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:52 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:52 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 8
+Thu Feb 11 2021 12:15:53 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 8
+Thu Feb 11 2021 12:15:53 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:53 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:53 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:57 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 9
+Thu Feb 11 2021 12:15:57 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 9
+Thu Feb 11 2021 12:15:57 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:57 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:57 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:15:58 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 10
+Thu Feb 11 2021 12:15:58 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 10
+Thu Feb 11 2021 12:15:58 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:15:58 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:15:58 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:02 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 11
+Thu Feb 11 2021 12:16:02 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 11
+Thu Feb 11 2021 12:16:02 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:02 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:02 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:03 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 12
+Thu Feb 11 2021 12:16:04 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 12
+Thu Feb 11 2021 12:16:04 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:04 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:04 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:07 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 13
+Thu Feb 11 2021 12:16:07 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 13
+Thu Feb 11 2021 12:16:07 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:07 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:08 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:09 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 14
+Thu Feb 11 2021 12:16:09 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 14
+Thu Feb 11 2021 12:16:09 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:09 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:09 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:12 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 15
+Thu Feb 11 2021 12:16:13 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 15
+Thu Feb 11 2021 12:16:13 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:13 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:13 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:14 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 16
+Thu Feb 11 2021 12:16:14 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 16
+Thu Feb 11 2021 12:16:14 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:14 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:14 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:18 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 17
+Thu Feb 11 2021 12:16:18 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 17
+Thu Feb 11 2021 12:16:18 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:18 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:18 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:19 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 18
+Thu Feb 11 2021 12:16:19 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 18
+Thu Feb 11 2021 12:16:19 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection closing because of error
+Thu Feb 11 2021 12:16:19 GMT-0500 (Eastern Standard Time): DB Connection ~~~ Failure ~~~
+Thu Feb 11 2021 12:16:19 GMT-0500 (Eastern Standard Time): ConnectionError: Login failed for user 'Hosptital_Py'.
+Thu Feb 11 2021 12:16:25 GMT-0500 (Eastern Standard Time): The website is running at http://localhost:3000
+Thu Feb 11 2021 12:16:25 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: filling pool with 2
+Thu Feb 11 2021 12:16:25 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 1
+Thu Feb 11 2021 12:16:25 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: creating connection: 2
+Thu Feb 11 2021 12:16:26 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 2
+Thu Feb 11 2021 12:16:26 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection connected: 1
+Thu Feb 11 2021 12:17:04 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: acquired connection 1
+Thu Feb 11 2021 12:17:04 GMT-0500 (Eastern Standard Time): Patient ID: 1234
+Thu Feb 11 2021 12:17:05 GMT-0500 (Eastern Standard Time): Prediction: 2.942841071759036
+Thu Feb 11 2021 12:17:05 GMT-0500 (Eastern Standard Time): Tedious-Connection-Pool: connection reset: 1

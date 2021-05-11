@@ -1369,3 +1369,145 @@ else:
 ;
 END
 GO
+
+-- Stored Procedure to use native scoring for RF model (rxDForest implementation) for a single new case
+
+-- @eid: specify the patient id to retrive record and score, ie. 1234, 1235, 9999
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE or alter PROCEDURE [dbo].[do_native_predict] --1234
+    @eid int
+AS
+BEGIN
+    DECLARE @nativeModel VARBINARY(MAX)
+    DECLARE @start DATETIME
+    DECLARE @end DATETIME
+    DECLARE @elapsed varchar(max)
+
+    -- Get the native model from the models table
+    SET @nativeModel = ( SELECT value FROM RTS WHERE id = 'RF')
+
+
+    -- Get the patient record from a historical table using the eid
+	INSERT INTO [QueryPatient]
+    SELECT *
+    FROM [LengthOfStay]
+    WHERE eid = @eid
+
+--	Step 1: Replace the missing values with the mode and the mean. 
+	exec [dbo].[fill_NA_mode_mean] @input = [QueryPatient], @output = 'LoS0_Prod'
+
+-- Step 2: Feature Engineering. 
+    exec [dbo].[feature_engineering]  @input = 'LoS0_Prod', @output = 'Los_Prod', @is_production = 1
+
+
+    SET @start = GETDATE()
+
+    -- Do real time scoring using native PREDICT clause
+    SELECT [LengthOfStay_Pred]
+    FROM PREDICT (MODEL = @nativeModel, DATA = [LoS_Prod] ) WITH ( LengthOfStay_Pred FLOAT ) p;
+
+    SET @end = GETDATE()
+
+    SET @elapsed = CONVERT(VARCHAR(max),(SELECT DATEDIFF(MICROSECOND,@start,@end)))
+
+    PRINT 'Elapsed Time for 1 row scoring is : ' + @elapsed + ' microseconds.'
+	TRUNCATE table QueryPatient 
+
+END
+GO
+
+drop table if exists dbo.QueryPatient;
+go
+/****** Object:  Table [dbo].[QueryPatient]    Script Date: 12/15/2017 5:10:15 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[QueryPatient](
+	[eid] [int] NOT NULL,
+	[vdate] [date] NULL,
+	[rcount] [varchar](2) NULL,
+	[gender] [varchar](1) NULL,
+	[dialysisrenalendstage] [varchar](1) NULL,
+	[asthma] [varchar](1) NULL,
+	[irondef] [varchar](1) NULL,
+	[pneum] [varchar](1) NULL,
+	[substancedependence] [varchar](1) NULL,
+	[psychologicaldisordermajor] [varchar](1) NULL,
+	[depress] [varchar](1) NULL,
+	[psychother] [varchar](1) NULL,
+	[fibrosisandother] [varchar](1) NULL,
+	[malnutrition] [varchar](1) NULL,
+	[hemo] [varchar](1) NULL,
+	[hematocrit] [float] NULL,
+	[neutrophils] [float] NULL,
+	[sodium] [float] NULL,
+	[glucose] [float] NULL,
+	[bloodureanitro] [float] NULL,
+	[creatinine] [float] NULL,
+	[bmi] [float] NULL,
+	[pulse] [float] NULL,
+	[respiration] [float] NULL,
+	[secondarydiagnosisnonicd9] [varchar](2) NULL,
+	[discharged] [date] NULL,
+	[facid] [varchar](1) NULL,
+	[lengthofstay] [int] NULL
+) ON [PRIMARY]
+GO
+
+-- My simple proc to serialize the model bin, cause train_model_real_time_scoring errors. 
+
+create or alter proc [GetRTSModelRF]   
+as
+
+declare @info varbinary(max);
+select @info = info from dbo.ColInfo;
+
+exec sp_execute_external_script @language = N'Python', @script = N' 
+import dill
+from numpy import sqrt
+from pandas import DataFrame
+from revoscalepy import rx_set_compute_context, RxSqlServerData, rx_dforest, RxOdbcData, rx_serialize_model, rx_write_object, RxLocalSeq
+from microsoftml import adadelta_optimizer
+
+connection_string = "Driver=SQL Server;Server=localhost;Database=Hospital_Py;Trusted_Connection=true;"
+
+column_info = dill.loads(info)
+
+##	Set training dataset, set features and types.
+
+variables_all = [var for var in column_info]
+variables_to_remove = ["eid", "vdate", "discharged", "facid"]
+training_variables = [x for x in variables_all if x not in variables_to_remove]
+LoS_Train = RxSqlServerData(sql_query = "SELECT eid, {} FROM LoS WHERE eid IN (SELECT eid from Train_Id)".format(", ".join(training_variables)),
+                            connection_string = connection_string,
+                            column_info = column_info)
+
+##	Specify the variables to keep for the training 
+
+variables_to_remove = ["eid", "vdate", "discharged", "facid", "lengthofstay"]
+training_variables = [x for x in variables_all if x not in variables_to_remove]
+formula = "lengthofstay ~ " + " + ".join(training_variables)
+
+## Train RF Model
+dest = RxOdbcData(connection_string, table = "RTS")
+model = rx_dforest(formula=formula,
+                    data=LoS_Train,
+                    n_tree=40,
+                    cp=0.00005,
+                    min_split=int(sqrt(70000)),
+                    max_num_bins=int(sqrt(70000)),
+                    seed=5)
+serialized_model = rx_serialize_model(model, realtime_scoring_only = True)
+rx_write_object(dest, key_name="id", key="RF", value_name="value", value=serialized_model, serialize=False, compress=None, overwrite=False)'
+
+, @params = N'@info varbinary(max)'
+, @info = @info;
+
+GO

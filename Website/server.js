@@ -31,10 +31,10 @@ var poolConfig = {
 };
 
   var connectionConfig = {
-    userName: 'XXYOURSQLUSER',
-    password: 'XXYOURSQLPW',
-    server: 'localhost',
-    options: { encrypt: true, database: 'Hospital_R' }
+    userName: 'Hospital_Py',
+    password: 'LoSdemo2021',
+    server: 'FLDSVRSDV01.upcic.inc',
+    options: { encrypt: true, database: 'Hospital_Py' }
 
 };
 
@@ -94,7 +94,7 @@ app.get('/predict', function (req, res) {
     });
 
     var eid = req.query.eid;
-    console.log('Patient ID: ' + eid)
+    console.log('Claim ID: ' + eid)
     request.on('row', function (col) {
       if (col[0].value === null) {
         console.log('NULL result');
